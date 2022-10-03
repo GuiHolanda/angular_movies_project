@@ -1,0 +1,38 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffe645 0%, #e2aa02 100%);
+  .logo {
+    font-size: 70px;
+    font-weight: bold;
+    font-family: "Creepster", cursive;
+    letter-spacing: 10px;
+  }
+  .desc {
+    font-size: 24px;
+    font-family: "Aladin", cursive;
+    letter-spacing: 5px;
+    text-align: left;
+  }
+  .film {
+    max-width: 300px;
+    max-height: 350px;
+    margin-right: 15px;
+  }
+  .form {
+    margin: auto;
+    max-width: 500px;
+    max-height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.288);
+  }
+  .errorMsg {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+}

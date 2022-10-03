@@ -1,0 +1,98 @@
+.home-container {
+  display: flex;
+  .all-movies {
+    width: 75%;
+    min-height: calc(100vh - 80px);
+    border-right: 1px solid #fdc827;
+    padding: 20px 40px;
+    font-family: "Roboto", sans-serif;
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      h4 {
+        font-weight: bold;
+        border-left: 5px solid #ff9900;
+        padding-left: 10px;
+      }
+      .view-all {
+        cursor: pointer;
+        padding: 4px 8px;
+        border-radius: 5px;
+        color: white;
+        background-color: #ff9900;
+      }
+    }
+    .movies-thumbnails {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin-bottom: 30px;
+      .movie {
+        border-radius: 10px;
+        margin-bottom: 10px;
+        background-color: #ff9900;
+        .cover {
+          cursor: pointer;
+          img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+          }
+        }
+        .details {
+          padding: 10px;
+          color: bisque;
+          width: 180px;
+          .name {
+            font-weight: bold;
+            height: 50px;
+            margin-top: 5px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .popular-movies {
+    width: 25%;
+    min-height: calc(100vh - 80px);
+    padding: 20px 40px;
+    font-family: "Roboto", sans-serif;
+    h4 {
+      font-weight: bold;
+      border-left: 5px solid #ff9900;
+      padding-left: 10px;
+    }
+    .movies {
+      .movie {
+        margin-bottom: 20px;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .name {
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    }
+    .view-all {
+      color: #ff9900;
+      text-align: right;
+      margin-top: 30px;
+      cursor: pointer;
+    }
+  }
+}
+
+.rating {
+  padding-right: 45px;
+  position: relative;
+  .rating-value {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    font-weight: bold;
+  }
+}

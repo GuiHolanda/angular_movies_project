@@ -1,0 +1,42 @@
+<div class="login-container">
+  <div class="d-flex flex-row mb-3">
+    <img src="assets/imgs/film.png" alt="film" class="film" />
+    <div class="d-flex flex-column">
+      <div class="logo">Rotten Potatoes</div>
+      <div class="desc">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius unde
+        fugit suscipit similique. Sunt quam commodi veritatis harum, autem
+        ipsam? Blanditiis fuga doloremque magni accusamus quasi laborum non
+        magnam suscipit laudantium fugit aliquid numquam, voluptatem sit animi
+        ab autem reprehenderit odit alias quisquam temporibus similique fugiat
+        perferendis iste excepturi? Dolor?
+      </div>
+    </div>
+  </div>
+  <div class="form">
+    <div class="mb-3">
+      <label for="userInput" class="form-label">Username</label>
+      <input
+        type="text"
+        class="form-control"
+        id="userInput"
+        [(ngModel)]="username"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="exampleInputPassword1"
+        [(ngModel)]="password"
+      />
+    </div>
+    <div class="d-flex justify-content-between align-items-center">
+      <button type="submit" (click)="login()" class="btn btn-primary">
+        Submit
+      </button>
+      <p class="errorMsg">{{ errorMsg }}</p>
+    </div>
+  </div>
+</div>
